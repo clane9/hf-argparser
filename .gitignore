@@ -1,0 +1,23 @@
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Vim
+*.swp
+
+# Distribution / packaging
+*.egg-info/
+dist
+build
+
+# Unit test / coverage reports
+.pytest_cache
+
+# VScode IDE
+.vscode/
+.env
+
+# Local environment
+.venv

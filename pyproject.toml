@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=45"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hf-argparser"
+description = "A standalone copy of the Huggingface argument parser"
+version = "4.29.0"
+authors = [
+    { name = "The Hugging Face team (past and future) with the help of all our contributors (https://github.com/huggingface/transformers/graphs/contributors)", email = "transformers@huggingface.co" }
+]
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "Apache 2.0"}
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["PyYAML"]
+
+[tool.setuptools]
+py-modules = ["hf_argparser"]
+
+[project.optional-dependencies]
+test = ["transformers", "pytest"]
+
+[project.urls]
+"Homepage" = "https://github.com/clane9/hf-argparser"
